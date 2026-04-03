@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-04-04T01:24:25.163497",
+  "total_tracked": 29,
+  "found": 14,
+  "not_found": 15,
+  "top_10": [
+    {
+      "repo": "OpenClaw/openclaw",
+      "stars": 347216,
+      "forks": 69238,
+      "language": "TypeScript",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2025-11-24",
+      "open_issues": 17317,
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e "
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "stars": 136564,
+      "forks": 14921,
+      "language": "TypeScript",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2025-04-30",
+      "open_issues": 6201,
+      "description": "The open source coding agent."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "stars": 108029,
+      "forks": 17643,
+      "language": "Shell",
+      "license": "?",
+      "updated": "2026-04-03",
+      "created": "2025-02-22",
+      "open_issues": 8977,
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and he"
+    },
+    {
+      "repo": "openai/codex",
+      "stars": 72945,
+      "forks": 10226,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2025-04-13",
+      "open_issues": 2264,
+      "description": "Lightweight coding agent that runs in your terminal"
+    },
+    {
+      "repo": "microsoft/autogen",
+      "stars": 56657,
+      "forks": 8519,
+      "language": "Python",
+      "license": "CC-BY-4.0",
+      "updated": "2026-04-03",
+      "created": "2023-08-18",
+      "open_issues": 726,
+      "description": "A programming framework for agentic AI"
+    },
+    {
+      "repo": "crewAIInc/crewAI",
+      "stars": 47954,
+      "forks": 6521,
+      "language": "Python",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2023-10-27",
+      "open_issues": 497,
+      "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intellige"
+    },
+    {
+      "repo": "aider-ai/aider",
+      "stars": 42771,
+      "forks": 4124,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2023-05-09",
+      "open_issues": 1465,
+      "description": "aider is AI pair programming in your terminal"
+    },
+    {
+      "repo": "getcursor/cursor",
+      "stars": 32564,
+      "forks": 2224,
+      "language": "?",
+      "license": "?",
+      "updated": "2026-04-03",
+      "created": "2023-03-12",
+      "open_issues": 1,
+      "description": "The AI Code Editor"
+    },
+    {
+      "repo": "continuedev/continue",
+      "stars": 32273,
+      "forks": 4328,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2023-05-24",
+      "open_issues": 484,
+      "description": "\u23e9 Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI"
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "stars": 28353,
+      "forks": 4840,
+      "language": "Python",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2023-08-09",
+      "open_issues": 484,
+      "description": "Build resilient language agents as graphs."
+    }
+  ],
+  "all_findings": [
+    {
+      "repo": "anthropics/claude-code",
+      "stars": 108029,
+      "forks": 17643,
+      "language": "Shell",
+      "license": "?",
+      "updated": "2026-04-03",
+      "created": "2025-02-22",
+      "open_issues": 8977,
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and he"
+    },
+    {
+      "repo": "OpenClaw/openclaw",
+      "stars": 347216,
+      "forks": 69238,
+      "language": "TypeScript",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2025-11-24",
+      "open_issues": 17317,
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e "
+    },
+    {
+      "repo": "openai/codex",
+      "stars": 72945,
+      "forks": 10226,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2025-04-13",
+      "open_issues": 2264,
+      "description": "Lightweight coding agent that runs in your terminal"
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "stars": 136564,
+      "forks": 14921,
+      "language": "TypeScript",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2025-04-30",
+      "open_issues": 6201,
+      "description": "The open source coding agent."
+    },
+    {
+      "repo": "getcursor/cursor",
+      "stars": 32564,
+      "forks": 2224,
+      "language": "?",
+      "license": "?",
+      "updated": "2026-04-03",
+      "created": "2023-03-12",
+      "open_issues": 1,
+      "description": "The AI Code Editor"
+    },
+    {
+      "repo": "continuedev/continue",
+      "stars": 32273,
+      "forks": 4328,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2023-05-24",
+      "open_issues": 484,
+      "description": "\u23e9 Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI"
+    },
+    {
+      "repo": "rooveterinaryinc/roo-cline",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "aider-ai/aider",
+      "stars": 42771,
+      "forks": 4124,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2023-05-09",
+      "open_issues": 1465,
+      "description": "aider is AI pair programming in your terminal"
+    },
+    {
+      "repo": "sweep-ai/sweep",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "sourcegraph/cody",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "github/github-copilot",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "windsurf-ai/windsurf",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "kilocode/kilo-code",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "Qodo/qodo-gen",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "Exafunction/codeium",
+      "stars": 274,
+      "forks": 18,
+      "language": "?",
+      "license": "NOASSERTION",
+      "updated": "2026-04-02",
+      "created": "2022-12-16",
+      "open_issues": 239,
+      "description": ""
+    },
+    {
+      "repo": "tabnine/tabnine-vscode",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "amazon-q/amazon-q-developer",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "jetbrains/junie",
+      "stars": 133,
+      "forks": 6,
+      "language": "Shell",
+      "license": "NOASSERTION",
+      "updated": "2026-04-03",
+      "created": "2025-04-07",
+      "open_issues": 16,
+      "description": "An AI coding agent by JetBrains that ships code from your terminal, IDE, or CI/CD pipeline - powered"
+    },
+    {
+      "repo": "pearai/pearai",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "stackblitz/bolt.new",
+      "stars": 16313,
+      "forks": 14599,
+      "language": "TypeScript",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2024-09-24",
+      "open_issues": 8196,
+      "description": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://suppo"
+    },
+    {
+      "repo": "lovable-dev/lovable",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "replit/replit-agent",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "vercel/v0",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "google/a2a",
+      "stars": 22998,
+      "forks": 2339,
+      "language": "Shell",
+      "license": "Apache-2.0",
+      "updated": "2026-04-03",
+      "created": "2025-03-25",
+      "open_issues": 223,
+      "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque age"
+    },
+    {
+      "repo": "microsoft/autogen",
+      "stars": 56657,
+      "forks": 8519,
+      "language": "Python",
+      "license": "CC-BY-4.0",
+      "updated": "2026-04-03",
+      "created": "2023-08-18",
+      "open_issues": 726,
+      "description": "A programming framework for agentic AI"
+    },
+    {
+      "repo": "crewAIInc/crewAI",
+      "stars": 47954,
+      "forks": 6521,
+      "language": "Python",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2023-10-27",
+      "open_issues": 497,
+      "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intellige"
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "stars": 28353,
+      "forks": 4840,
+      "language": "Python",
+      "license": "MIT",
+      "updated": "2026-04-03",
+      "created": "2023-08-09",
+      "open_issues": 484,
+      "description": "Build resilient language agents as graphs."
+    },
+    {
+      "repo": "devin-ai/devin",
+      "status": "NOT FOUND"
+    },
+    {
+      "repo": "manus-ai/manus",
+      "status": "NOT FOUND"
+    }
+  ]
+}

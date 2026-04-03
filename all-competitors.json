@@ -1,0 +1,39 @@
+{
+  "last_updated": "2026-04-04",
+  "source": "Auto-Research + Marketing Strategy Analysis",
+  "competitors": {
+    "AI Coding Agents": [
+      {"name": "OpenClaw", "repo": "OpenClaw/openclaw", "stars": 347216, "priority": "CRITICAL"},
+      {"name": "OpenCode", "repo": "anomalyco/opencode", "stars": 136564, "priority": "CRITICAL"},
+      {"name": "Claude Code", "repo": "anthropics/claude-code", "stars": 108029, "priority": "CRITICAL"},
+      {"name": "OpenAI Codex", "repo": "openai/codex", "stars": 72945, "priority": "CRITICAL"},
+      {"name": "Cursor", "repo": "getcursor/cursor", "stars": 32564, "priority": "HIGH"},
+      {"name": "Continue", "repo": "continuedev/continue", "stars": 32273, "priority": "HIGH"},
+      {"name": "Aider", "repo": "aider-ai/aider", "stars": 42771, "priority": "HIGH"},
+      {"name": "Windsurf", "repo": "windsurf-ai/windsurf", "stars": 0, "priority": "HIGH"},
+      {"name": "Kilo Code", "repo": "kilocode/kilo-code", "stars": 0, "priority": "HIGH"},
+      {"name": "Qodo", "repo": "Qodo/qodo", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Devin", "repo": "devin-ai/devin", "stars": 0, "priority": "HIGH"},
+      {"name": "Manus AI", "repo": "manus-ai/manus", "stars": 0, "priority": "HIGH"},
+      {"name": "GitHub Copilot", "repo": "github/copilot", "stars": 0, "priority": "HIGH"},
+      {"name": "Amazon Q", "repo": "amazon-q/amazon-q-developer", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Tabnine", "repo": "tabnine/tabnine-vscode", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Codeium", "repo": "Exafunction/codeium", "stars": 274, "priority": "MEDIUM"},
+      {"name": "Sourcegraph Cody", "repo": "sourcegraph/cody", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Roo Cline", "repo": "rooveterinaryinc/roo-cline", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Bolt.new", "repo": "stackblitz/bolt.new", "stars": 16313, "priority": "HIGH"},
+      {"name": "Lovable", "repo": "lovable-dev/lovable", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Replit Agent", "repo": "replit/replit-agent", "stars": 0, "priority": "MEDIUM"},
+      {"name": "Vercel v0", "repo": "vercel/v0", "stars": 0, "priority": "MEDIUM"},
+      {"name": "PearAI", "repo": "pearai/pearai", "stars": 0, "priority": "LOW"},
+      {"name": "JetBrains Junie", "repo": "jetbrains/junie", "stars": 133, "priority": "MEDIUM"},
+      {"name": "Sweep", "repo": "sweep-ai/sweep", "stars": 0, "priority": "MEDIUM"}
+    ],
+    "Agent Frameworks": [
+      {"name": "AutoGen", "repo": "microsoft/autogen", "stars": 56657, "priority": "HIGH"},
+      {"name": "CrewAI", "repo": "crewAIInc/crewAI", "stars": 47954, "priority": "HIGH"},
+      {"name": "LangGraph", "repo": "langchain-ai/langgraph", "stars": 28353, "priority": "HIGH"},
+      {"name": "Google A2A", "repo": "google/a2a", "stars": 22998, "priority": "HIGH"}
+    ]
+  }
+}
