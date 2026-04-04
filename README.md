@@ -8,59 +8,64 @@ See `all-competitors.json` for full list.
 
 ## Comprehensive Scanning System
 
-### n8n Workflow (`workflows/competitor-scanner-master.json`)
+### n8n Workflow
 
-A comprehensive n8n workflow that monitors 50+ competitors across GitHub and the web:
+Import `workflows/competitor-scanner-master.json` into your n8n instance. The workflow provides:
 
-- **Schedule-based scanning** with priority tiers:
-  - CRITICAL: Every 6 hours (Cursor 3, Claude Code, Codex, Antigravity, Copilot, Roo Code)
-  - HIGH: Every 12 hours (Windsurf, OpenCode, Aider, Kilo Code, Continue, Replit, Bolt.new, Devin, Augment, Morph, Jules, Cline, OpenHands, MetaGPT, AutoGen, CrewAI, LangGraph, Google A2A)
-  - MEDIUM: Daily (Tabnine, Amazon Q, DeepSeek, Cody, Pieces, CodeRabbit, SWE-agent, Devika, GPT Engineer, AutoDev, AutoGPT, ChatDev, CAMEL, Lovable, v0, Junie)
-  - LOW: Weekly (Bito, MutableAI, Grit, Sweep, Bloop, Mintlify, Codeium, PearAI)
+- **4 Schedule Triggers** based on priority:
+  - CRITICAL: every 6 hours (Cursor 3, Claude Code, Codex, Antigravity, Copilot, Roo Code)
+  - HIGH: every 12 hours (Windsurf, OpenCode, Aider, Kilo Code, Continue, Devin, Augment, Morph, Jules, Replit, Bolt.new, MetaGPT, AutoGen, CrewAI, LangGraph, Google A2A)
+  - MEDIUM: daily at 6AM (Tabnine, Amazon Q, DeepSeek, Cody, Pieces, CodeRabbit, SWE-agent, OpenHands, Devika, GPT Engineer, AutoDev, ChatDev, CAMEL, AutoGPT, Lovable, v0, Junie)
+  - LOW: weekly on Monday (Bito, MutableAI, Grit, Sweep, Bloop, Mintlify, Codeium, PearAI)
 
-- **GitHub scanning**: Commits, releases, PRs, issues, stars, contributors
-- **Web scanning**: Changelogs, blog posts, Twitter announcements
-- **Notifications**: Telegram and Discord
-- **Results**: Stored in `competitor-research-results.json`
+- **GitHub API Scanning**: commits, releases, PRs, issues, star counts
+- **Web Scraping**: changelogs, blogs, announcement pages
+- **Change Detection**: compares with previous scan results
+- **Notifications**: Telegram and Discord with formatted messages
+- **Manual Trigger**: POST to `/webhook/competitor-scan` with optional `priority` or `category` filter
 
-### Python Scanner (`scanner.py`)
+### Python Scanner
 
-Standalone Python script that can be run independently or via n8n:
-
-```bash
-# Install dependencies
-pip install requests
-
-# Run scanner
-GITHUB_TOKEN=your_token python scanner.py
-```
-
-Scans:
-- GitHub commits, releases, PRs, issues
-- Star milestone tracking (1K, 5K, 10K, 25K, 50K, 100K, 200K, 500K)
-- Changelog change detection via content hashing
-- Priority-based significance scoring
-
-### Webhook Handler (`webhook-handler.py`)
-
-Flask app for n8n webhook integration:
+Run standalone or integrate with n8n via webhook:
 
 ```bash
-# Start webhook server
-pip install flask
-python webhook-handler.py
+# Scan all competitors
+python3 scanner.py
 
-# Trigger scan via webhook
-curl -X POST http://localhost:8080/scan -H "Content-Type: application/json" -d '{"priority": "CRITICAL"}'
+# Scan by priority
+python3 scanner.py --priority=CRITICAL
 
-# Get latest report
-curl http://localhost:8080/report
+# Scan by category
+python3 scanner.py --category="AI Coding Agents (IDE/CLI)"
 ```
 
-## Auto-Research
+### Webhook Handler
 
-Runs daily at 6AM CET via LaunchAgent `com.sin.competitor-research`.
-Script: `auto-research-daily.sh`
+Start the Flask webhook server for n8n integration:
+
+```bash
+pip install flask requests
+python3 webhook-handler.py
+```
+
+Endpoints:
+- `POST /scan` - Trigger a scan (optional: `priority`, `category`)
+- `GET /report` - Get latest scan results
+- `GET /health` - Health check
+
+## Competitor Categories
+
+### AI Coding Agents (IDE/CLI) - 25 competitors
+Cursor 3, Claude Code, OpenAI Codex, Google Antigravity, GitHub Copilot, Windsurf, OpenCode, Aider, Kilo Code, Continue, Tabnine, Amazon Q Developer, Replit Agent 4, Bolt.new, Devin, Augment Code, Morph, Google Jules, DeepSeek Coder, Sourcegraph Cody, Bito AI, MutableAI, Pieces, CodeRabbit, Grit
+
+### Autonomous Coding Agents - 10 competitors
+Roo Code, Cline, SWE-agent, OpenHands, Devika, GPT Engineer, AutoDev, Magentic, AutoGPT, BabyAGI
+
+### Multi-Agent Frameworks - 7 competitors
+MetaGPT, ChatDev, CAMEL, AutoGen, CrewAI, LangGraph, Google A2A
+
+### Pivoted/Adjacent - 8 competitors
+Sweep, Bloop, Mintlify, Codeium, Lovable, Vercel v0, PearAI, JetBrains Junie
 
 ## Top Competitors by Stars
 
@@ -79,31 +84,27 @@ Script: `auto-research-daily.sh`
 
 ## Files
 
-- `all-competitors.json` — Master competitor list (50+ competitors)
-- `competitor-research-results.json` — Latest research results
-- `auto-research-daily.sh` — Daily research script
-- `scanner.py` — Standalone Python scanner
-- `webhook-handler.py` — Flask webhook handler for n8n
-- `workflows/competitor-scanner-master.json` — n8n workflow definition
+- `all-competitors.json` - Master competitor list (50+ competitors)
+- `competitor-research-results.json` - Latest scan results
+- `auto-research-daily.sh` - Daily research script
+- `scanner.py` - Standalone Python scanner
+- `webhook-handler.py` - Flask webhook server for n8n integration
+- `workflows/competitor-scanner-master.json` - n8n workflow definition
 
-## Competitor Categories
+## Environment Variables
 
-### AI Coding Agents (IDE/CLI)
-Cursor 3, Claude Code, Codex, Antigravity, Copilot, Windsurf, OpenCode, Aider, Kilo Code, Continue, Tabnine, Amazon Q Developer, Replit Agent 4, Bolt.new, Devin, Augment Code, Morph, Jules, DeepSeek Coder, Cody, Bito AI, MutableAI, Pieces, CodeRabbit, Grit
-
-### Autonomous Coding Agents
-Roo Code, Cline, SWE-agent, OpenHands, Devika, GPT Engineer, AutoDev, Magentic, AutoGPT, BabyAGI
-
-### Multi-Agent Frameworks
-MetaGPT, ChatDev, CAMEL, AutoGen, CrewAI, LangGraph, Google A2A
-
-### Pivoted/Adjacent
-Sweep, Bloop, Mintlify, Codeium, Lovable, Vercel v0, PearAI, JetBrains Junie
+| Variable | Description |
+|----------|-------------|
+| `GITHUB_TOKEN` | GitHub API token for authenticated requests |
+| `TELEGRAM_CHAT_ID` | Telegram chat ID for notifications |
+| `TELEGRAM_API_ID` | n8n Telegram API credential ID |
+| `DISCORD_CHANNEL_ID` | Discord channel ID for notifications |
+| `DISCORD_WEBHOOK_ID` | n8n Discord webhook credential ID |
 
 ## Mandate
 
 **Team Coder MUST analyze competitors and implement missing features.**
-Research runs automatically daily at 6AM CET.
+Research runs automatically based on priority schedule.
 Issues are automatically created in all 8 team coder repos.
 
-> OpenSIN connects to **100+ LLM providers** and **1000+ models** — including OpenAI, Anthropic, Google, Mistral, Groq, Cerebras, TogetherAI, Ollama, local models, and 90+ more. Bring your own API key or use our free tier.
+> OpenSIN connects to **100+ LLM providers** and **1000+ models** - including OpenAI, Anthropic, Google, Mistral, Groq, Cerebras, TogetherAI, Ollama, local models, and 90+ more. Bring your own API key or use our free tier.
