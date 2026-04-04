@@ -37,3 +37,5 @@ Script: `auto-research-daily.sh`
 **Team Coder MUST analyze competitors and implement missing features.**
 Research runs automatically daily at 6AM CET.
 Issues are automatically created in all 8 team coder repos.
+
+> OpenSIN connects to **100+ LLM providers** and **1000+ models** — including OpenAI, Anthropic, Google, Mistral, Groq, Cerebras, TogetherAI, Ollama, local models, and 90+ more. Bring your own API key or use our free tier.
