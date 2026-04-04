@@ -1,39 +1,101 @@
 {
   "last_updated": "2026-04-04",
-  "source": "Auto-Research + Marketing Strategy Analysis",
+  "source": "Comprehensive Competitive Intelligence — 40+ Competitors",
   "competitors": {
-    "AI Coding Agents": [
-      {"name": "OpenClaw", "repo": "OpenClaw/openclaw", "stars": 347216, "priority": "CRITICAL"},
-      {"name": "OpenCode", "repo": "anomalyco/opencode", "stars": 136564, "priority": "CRITICAL"},
-      {"name": "Claude Code", "repo": "anthropics/claude-code", "stars": 108029, "priority": "CRITICAL"},
-      {"name": "OpenAI Codex", "repo": "openai/codex", "stars": 72945, "priority": "CRITICAL"},
-      {"name": "Cursor", "repo": "getcursor/cursor", "stars": 32564, "priority": "HIGH"},
-      {"name": "Continue", "repo": "continuedev/continue", "stars": 32273, "priority": "HIGH"},
-      {"name": "Aider", "repo": "aider-ai/aider", "stars": 42771, "priority": "HIGH"},
-      {"name": "Windsurf", "repo": "windsurf-ai/windsurf", "stars": 0, "priority": "HIGH"},
-      {"name": "Kilo Code", "repo": "kilocode/kilo-code", "stars": 0, "priority": "HIGH"},
-      {"name": "Qodo", "repo": "Qodo/qodo", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Devin", "repo": "devin-ai/devin", "stars": 0, "priority": "HIGH"},
-      {"name": "Manus AI", "repo": "manus-ai/manus", "stars": 0, "priority": "HIGH"},
-      {"name": "GitHub Copilot", "repo": "github/copilot", "stars": 0, "priority": "HIGH"},
-      {"name": "Amazon Q", "repo": "amazon-q/amazon-q-developer", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Tabnine", "repo": "tabnine/tabnine-vscode", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Codeium", "repo": "Exafunction/codeium", "stars": 274, "priority": "MEDIUM"},
-      {"name": "Sourcegraph Cody", "repo": "sourcegraph/cody", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Roo Cline", "repo": "rooveterinaryinc/roo-cline", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Bolt.new", "repo": "stackblitz/bolt.new", "stars": 16313, "priority": "HIGH"},
-      {"name": "Lovable", "repo": "lovable-dev/lovable", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Replit Agent", "repo": "replit/replit-agent", "stars": 0, "priority": "MEDIUM"},
-      {"name": "Vercel v0", "repo": "vercel/v0", "stars": 0, "priority": "MEDIUM"},
-      {"name": "PearAI", "repo": "pearai/pearai", "stars": 0, "priority": "LOW"},
-      {"name": "JetBrains Junie", "repo": "jetbrains/junie", "stars": 133, "priority": "MEDIUM"},
-      {"name": "Sweep", "repo": "sweep-ai/sweep", "stars": 0, "priority": "MEDIUM"}
+    "AI Coding Agents (IDE/CLI)": [
+      {"name": "Cursor 3", "repo": "getcursor/cursor", "website": "https://cursor.com", "changelog": "https://cursor.com/changelog", "priority": "CRITICAL", "category": "IDE"},
+      {"name": "Claude Code", "repo": "anthropics/claude-code", "website": "https://code.claude.com", "changelog": "https://code.claude.com/docs/en/changelog", "priority": "CRITICAL", "category": "CLI"},
+      {"name": "OpenAI Codex", "repo": "openai/codex", "website": "https://openai.com/codex", "changelog": "https://github.com/openai/codex/releases", "priority": "CRITICAL", "category": "CLI+Cloud"},
+      {"name": "Google Antigravity", "repo": "google/antigravity", "website": "https://antigravity.google", "changelog": "https://antigravity.google/changelog", "priority": "CRITICAL", "category": "IDE"},
+      {"name": "GitHub Copilot", "repo": "github/copilot", "website": "https://github.com/features/copilot", "changelog": "https://github.blog/changelog/label/copilot/", "priority": "CRITICAL", "category": "IDE+CLI"},
+      {"name": "Windsurf", "repo": "windsurf-ai/windsurf", "website": "https://windsurf.com", "changelog": "https://windsurf.com/changelog", "priority": "HIGH", "category": "IDE"},
+      {"name": "OpenCode", "repo": "anomalyco/opencode", "website": "https://opencode.ai", "changelog": "https://github.com/anomalyco/opencode/releases", "priority": "HIGH", "category": "CLI"},
+      {"name": "Aider", "repo": "aider-ai/aider", "website": "https://aider.chat", "changelog": "https://github.com/Aider-AI/aider/releases", "priority": "HIGH", "category": "CLI"},
+      {"name": "Kilo Code", "repo": "kilocode/kilo-code", "website": "https://kilocode.ai", "changelog": "https://github.com/Kilo-Org/kilo-code/releases", "priority": "HIGH", "category": "IDE+CLI"},
+      {"name": "Continue", "repo": "continuedev/continue", "website": "https://continue.dev", "changelog": "https://github.com/continuedev/continue/releases", "priority": "HIGH", "category": "IDE"},
+      {"name": "Tabnine", "repo": "tabnine/tabnine-vscode", "website": "https://tabnine.com", "changelog": "https://www.tabnine.com/changelog", "priority": "MEDIUM", "category": "IDE"},
+      {"name": "Amazon Q Developer", "repo": "aws/amazon-q-developer", "website": "https://aws.amazon.com/q/developer", "changelog": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html", "priority": "MEDIUM", "category": "IDE"},
+      {"name": "Replit Agent 4", "repo": "replit/replit-agent", "website": "https://replit.com", "changelog": "https://replit.com/changelog", "priority": "HIGH", "category": "Cloud"},
+      {"name": "Bolt.new", "repo": "stackblitz/bolt.new", "website": "https://bolt.new", "changelog": "https://bolt.new/changelog", "priority": "HIGH", "category": "Web"},
+      {"name": "Devin", "repo": "cognition-ai/devin", "website": "https://devin.ai", "changelog": "https://devin.ai/changelog", "priority": "HIGH", "category": "Cloud"},
+      {"name": "Augment Code", "repo": "augment-dev/augment-code", "website": "https://augmentcode.com", "changelog": "https://docs.augmentcode.com/changelog", "priority": "HIGH", "category": "IDE+CLI"},
+      {"name": "Morph", "repo": "morphllm/morph", "website": "https://morphllm.com", "changelog": "https://morphllm.com/blog", "priority": "HIGH", "category": "Infrastructure"},
+      {"name": "Google Jules", "repo": "google/jules", "website": "https://jules.google", "changelog": "https://jules.google/changelog", "priority": "HIGH", "category": "Cloud"},
+      {"name": "DeepSeek Coder", "repo": "deepseek-ai/DeepSeek-Coder", "website": "https://deepseek.com", "changelog": "https://github.com/deepseek-ai/DeepSeek-Coder/releases", "priority": "MEDIUM", "category": "Model"},
+      {"name": "Sourcegraph Cody", "repo": "sourcegraph/cody", "website": "https://sourcegraph.com/cody", "changelog": "https://sourcegraph.com/changelog", "priority": "MEDIUM", "category": "IDE"},
+      {"name": "Bito AI", "repo": "bito-ai/bito", "website": "https://bito.ai", "changelog": "https://bito.ai/changelog", "priority": "LOW", "category": "IDE"},
+      {"name": "MutableAI", "repo": "mutableai/mutable", "website": "https://mutable.ai", "changelog": "https://mutable.ai/changelog", "priority": "LOW", "category": "IDE"},
+      {"name": "Pieces", "repo": "pieces-app/pieces", "website": "https://pieces.app", "changelog": "https://pieces.app/changelog", "priority": "MEDIUM", "category": "Workflow"},
+      {"name": "CodeRabbit", "repo": "coderabbitai/coderabbit", "website": "https://coderabbit.ai", "changelog": "https://coderabbit.ai/changelog", "priority": "MEDIUM", "category": "Review"},
+      {"name": "Grit", "repo": "getgrit/grit", "website": "https://grit.io", "changelog": "https://grit.io/changelog", "priority": "LOW", "category": "Migration"}
     ],
-    "Agent Frameworks": [
-      {"name": "AutoGen", "repo": "microsoft/autogen", "stars": 56657, "priority": "HIGH"},
-      {"name": "CrewAI", "repo": "crewAIInc/crewAI", "stars": 47954, "priority": "HIGH"},
-      {"name": "LangGraph", "repo": "langchain-ai/langgraph", "stars": 28353, "priority": "HIGH"},
-      {"name": "Google A2A", "repo": "google/a2a", "stars": 22998, "priority": "HIGH"}
+    "Autonomous Coding Agents": [
+      {"name": "Roo Code", "repo": "RooCodeInc/roo-code", "website": "https://roocode.com", "changelog": "https://github.com/RooCodeInc/Roo-Code/releases", "priority": "CRITICAL", "category": "IDE"},
+      {"name": "Cline", "repo": "cline/cline", "website": "https://cline.bot", "changelog": "https://github.com/cline/cline/releases", "priority": "HIGH", "category": "IDE"},
+      {"name": "SWE-agent", "repo": "SWE-agent/SWE-agent", "website": "https://swe-agent.com", "changelog": "https://github.com/SWE-agent/SWE-agent/releases", "priority": "MEDIUM", "category": "Research"},
+      {"name": "OpenHands", "repo": "All-Hands-AI/OpenHands", "website": "https://all-hands.dev", "changelog": "https://github.com/All-Hands-AI/OpenHands/releases", "priority": "HIGH", "category": "Cloud"},
+      {"name": "Devika", "repo": "stitionai/devika", "website": "https://devika.ai", "changelog": "https://github.com/stitionai/devika/releases", "priority": "MEDIUM", "category": "Cloud"},
+      {"name": "GPT Engineer", "repo": "gpt-engineer-org/gpt-engineer", "website": "https://gptengineer.app", "changelog": "https://github.com/gpt-engineer-org/gpt-engineer/releases", "priority": "MEDIUM", "category": "Cloud"},
+      {"name": "AutoDev", "repo": "unit-mesh/auto-dev", "website": "https://github.com/unit-mesh/auto-dev", "changelog": "https://github.com/unit-mesh/auto-dev/releases", "priority": "MEDIUM", "category": "IDE"},
+      {"name": "Magentic", "repo": "jackmpcollins/magentic", "website": "https://github.com/jackmpcollins/magentic", "changelog": "https://github.com/jackmpcollins/magentic/releases", "priority": "LOW", "category": "Framework"},
+      {"name": "AutoGPT", "repo": "Significant-Gravitas/AutoGPT", "website": "https://agpt.co", "changelog": "https://github.com/Significant-Gravitas/AutoGPT/releases", "priority": "MEDIUM", "category": "Framework"},
+      {"name": "BabyAGI", "repo": "yoheinakajima/babyagi", "website": "https://babyagi.org", "changelog": "https://github.com/yoheinakajima/babyagi/releases", "priority": "LOW", "category": "Framework"}
+    ],
+    "Multi-Agent Frameworks": [
+      {"name": "MetaGPT", "repo": "geekan/MetaGPT", "website": "https://docs.deepwisdom.ai", "changelog": "https://github.com/geekan/MetaGPT/releases", "priority": "HIGH", "category": "Framework"},
+      {"name": "ChatDev", "repo": "OpenBMB/ChatDev", "website": "https://chatdev.modelbest.cn", "changelog": "https://github.com/OpenBMB/ChatDev/releases", "priority": "MEDIUM", "category": "Framework"},
+      {"name": "CAMEL", "repo": "camel-ai/camel", "website": "https://www.camel-ai.org", "changelog": "https://github.com/camel-ai/camel/releases", "priority": "MEDIUM", "category": "Framework"},
+      {"name": "AutoGen", "repo": "microsoft/autogen", "website": "https://microsoft.github.io/autogen", "changelog": "https://github.com/microsoft/autogen/releases", "priority": "HIGH", "category": "Framework"},
+      {"name": "CrewAI", "repo": "crewAIInc/crewAI", "website": "https://crewai.com", "changelog": "https://github.com/crewAIInc/crewAI/releases", "priority": "HIGH", "category": "Framework"},
+      {"name": "LangGraph", "repo": "langchain-ai/langgraph", "website": "https://langchain-ai.github.io/langgraph", "changelog": "https://github.com/langchain-ai/langgraph/releases", "priority": "HIGH", "category": "Framework"},
+      {"name": "Google A2A", "repo": "google/a2a", "website": "https://a2a-protocol.org", "changelog": "https://github.com/google/A2A/releases", "priority": "HIGH", "category": "Protocol"}
+    ],
+    "Pivoted/Adjacent": [
+      {"name": "Sweep", "repo": "sweep-ai/sweep", "website": "https://sweep.dev", "changelog": "https://sweep.dev/changelog", "priority": "LOW", "category": "Pivoted→JetBrains"},
+      {"name": "Bloop", "repo": "BloopAI/bloop", "website": "https://bloop.ai", "changelog": "https://bloop.ai/changelog", "priority": "LOW", "category": "Pivoted→VibeKanban"},
+      {"name": "Mintlify", "repo": "mintlify/docs", "website": "https://mintlify.com", "changelog": "https://mintlify.com/changelog", "priority": "LOW", "category": "Documentation"},
+      {"name": "Codeium", "repo": "Exafunction/codeium", "website": "https://codeium.com", "changelog": "https://codeium.com/changelog", "priority": "LOW", "category": "Acquired→OpenAI"},
+      {"name": "Lovable", "repo": "lovable-dev/lovable", "website": "https://lovable.dev", "changelog": "https://lovable.dev/changelog", "priority": "MEDIUM", "category": "Web"},
+      {"name": "Vercel v0", "repo": "vercel/v0", "website": "https://v0.dev", "changelog": "https://v0.dev/changelog", "priority": "MEDIUM", "category": "Web"},
+      {"name": "PearAI", "repo": "pearai/pearai", "website": "https://pearai.app", "changelog": "https://pearai.app/changelog", "priority": "LOW", "category": "IDE"},
+      {"name": "JetBrains Junie", "repo": "jetbrains/junie", "website": "https://jetbrains.com/junie", "changelog": "https://jetbrains.com/changelog", "priority": "MEDIUM", "category": "IDE"}
+    ]
+  },
+  "scan_config": {
+    "github_sources": [
+      "commits",
+      "releases",
+      "pull_requests",
+      "issues",
+      "stars",
+      "contributors",
+      "discussions"
+    ],
+    "web_sources": [
+      "changelogs",
+      "blog_posts",
+      "twitter_announcements",
+      "product_hunt",
+      "hacker_news",
+      "reddit",
+      "dev_to"
+    ],
+    "scan_frequency": {
+      "CRITICAL": "every_6_hours",
+      "HIGH": "every_12_hours",
+      "MEDIUM": "daily",
+      "LOW": "weekly"
+    },
+    "notification_channels": [
+      "telegram",
+      "discord",
+      "email"
+    ],
+    "output_formats": [
+      "json",
+      "markdown",
+      "slack_format",
+      "html_dashboard"
     ]
   }
 }
