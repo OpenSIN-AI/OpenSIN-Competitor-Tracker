@@ -108,3 +108,19 @@ Research runs automatically based on priority schedule.
 Issues are automatically created in all 8 team coder repos.
 
 > OpenSIN connects to **100+ LLM providers** and **1000+ models** - including OpenAI, Anthropic, Google, Mistral, Groq, Cerebras, TogetherAI, Ollama, local models, and 90+ more. Bring your own API key or use our free tier.
+
+## 📚 Documentation
+
+This repository follows the [Global Dev Docs Standard](https://github.com/OpenSIN-AI/Global-Dev-Docs-Standard).
+
+For contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
+For security policy, see [SECURITY.md](SECURITY.md).
+For the complete OpenSIN ecosystem, see [OpenSIN-AI Organization](https://github.com/OpenSIN-AI).
+
+## 🔗 See Also
+
+- [OpenSIN Core](https://github.com/OpenSIN-AI/OpenSIN) — Main platform
+- [OpenSIN-Code](https://github.com/OpenSIN-AI/OpenSIN-Code) — CLI
+- [OpenSIN-backend](https://github.com/OpenSIN-AI/OpenSIN-backend) — Backend
+- [OpenSIN-Infrastructure](https://github.com/OpenSIN-AI/OpenSIN-Infrastructure) — Deploy
+- [Global Dev Docs Standard](https://github.com/OpenSIN-AI/Global-Dev-Docs-Standard) — Docs
