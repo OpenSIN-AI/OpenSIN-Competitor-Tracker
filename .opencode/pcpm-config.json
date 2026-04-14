@@ -5,7 +5,7 @@
     "onFailure": "/Users/jeremy/dev/Biz-SIN-Competitor-Tracker/.opencode/hooks/pcpm-after-run.sh"
   },
   "pcpm": {
-    "brainRepoPath": "/Users/jeremy/dev/Biz-SIN-Competitor-Tracker",
+    "brainRepoPath": "/Users/jeremy/dev/global-brain",
     "projectId": "Biz-SIN-Competitor-Tracker",
     "goalId": "default-goal",
     "goalDescription": "Continue development",
